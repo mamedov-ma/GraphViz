@@ -34,4 +34,9 @@ In $n$ next lines, each line should contain $n$ integers, where each integer can
 
 ![Minimal example](./images/1668882645.png)
 
+**Cicle:**
+
+![Minimal example](./images/1668882727.png)
+
+
 
