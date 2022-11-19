@@ -51,4 +51,8 @@ In $n$ next lines, each line should contain $n$ integers, where each integer can
 
 ![Minimal example](./images/1668884276.png)
 
+**Tree (input5.txt):**
+
+![Minimal example](./images/1668900650.png)
+
 
