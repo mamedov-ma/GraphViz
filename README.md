@@ -29,6 +29,7 @@ In $n$ next lines, each line should contain $n$ integers, where each integer can
 0 1 1 0 1
 ```
 ## Some examples 
+#### *samples* folder contain *input* files
 
 
 **Cicle (input1.txt):**
