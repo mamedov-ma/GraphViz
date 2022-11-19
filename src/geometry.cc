@@ -22,36 +22,36 @@ Point& Point::operator-=(const Vec &V)
     return *this;
 }
 
-Vec Vec::operator+(const Vec &V) const 
+Vec Vec::operator+(const Vec &V) const
 {
     return Vec(this->x + V.x, this->y + V.y);
 }
 
-Vec Vec::operator-(const Vec &V) const 
+Vec Vec::operator-(const Vec &V) const
 {
     return Vec(this->x - V.x, this->y - V.y);
 }
 
-Vec Vec::operator*(const double &c) const 
+Vec Vec::operator*(const double &c) const
 { 
     return Vec(this->x * c, this->y * c); 
 }
 
-Vec& Vec::operator+=(const Vec &V) 
+Vec& Vec::operator+=(const Vec &V)
 {
     this->x += V.x;
     this->y += V.y;
     return *this;
 }
 
-Vec& Vec::operator-=(const Vec &V) 
+Vec& Vec::operator-=(const Vec &V)
 {
     this->x -= V.x;
     this->y -= V.y;
     return *this;
 }
 
-Vec& Vec::operator*=(const double &c) 
+Vec& Vec::operator*=(const double &c)
 {
     this->x *= c;
     this->y *= c;

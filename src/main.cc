@@ -2,6 +2,7 @@
 #include <vector>
 #include <string>
 #include <ctime>
+
 #include "geometry.hh"
 #include "placement.hh"
 #include "matplotlibcpp.hh"
@@ -59,7 +60,7 @@ int main(int argc, char **argv)
         plt::annotate("ITEM " + std::to_string(i), x[i], y[i]);
     }
 
-    plt::savefig("images/" + std::to_string(time(0)) + ".png")
+    plt::savefig("images/" + std::to_string(time(0)) + ".png");
     
     return 0;
 }

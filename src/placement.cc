@@ -126,7 +126,7 @@ std::vector<Point> FruchtermanReingold::genPosition()
         }
         
         // Limit the displacement to the temperature T
-        for (int v = 0; v < N; ++v) 
+        for (int v = 0; v < N; ++v)
         {
             auto &Displacement = Displacements[v];
             double Norm = Displacement.getNorm();
@@ -143,11 +143,11 @@ std::vector<Point> FruchtermanReingold::genPosition()
     return Positions;
 }
 
-std::vector<std::vector<int>> Visualization(int N, int M, std::vector<std::vector<int>> Edges) 
+std::vector<std::vector<int>> Visualization(int N, int M, std::vector<std::vector<int>> Edges)
 {
     std::vector<std::vector<int>> Graph(N);
     
-    for (int i = 0; i < M; ++i) 
+    for (int i = 0; i < M; ++i)
     {
         Graph[Edges[i][0]].emplace_back(Edges[i][1]);
         Graph[Edges[i][1]].emplace_back(Edges[i][0]);
