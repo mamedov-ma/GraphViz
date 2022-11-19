@@ -14,6 +14,19 @@ make
 ./main < input.txt
 ```
 
+### Input Format
 
+The first line should contain one integer $n$, where $n$ should less than 1000.
+
+In next lines, each line should contain $n$ integers, where each integer can be 1 or 0.
+
+```
+5
+1 1 0 1 0
+1 1 0 0 1
+0 1 1 1 1
+0 0 0 0 0
+1 0 0 1 1
+```
 
 
