@@ -1,3 +1,0 @@
-/home/robocup/Desktop/graphviz/GraphViz/build/CMakeFiles/rebuild_cache.dir
-/home/robocup/Desktop/graphviz/GraphViz/build/CMakeFiles/edit_cache.dir
-/home/robocup/Desktop/graphviz/GraphViz/build/CMakeFiles/main.dir
