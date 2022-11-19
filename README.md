@@ -30,21 +30,24 @@ In $n$ next lines, each line should contain $n$ integers, where each integer can
 ```
 ## Some examples 
 
-**Identity matrix of size 30x30:**
 
-![Minimal example](./images/1668882645.png)
-
-**Cicle:**
+**Cicle (input1.txt):**
 
 ![Minimal example](./images/1668882727.png)
 
 
-**Random matrix 20x20:**
+**Identity matrix of size 30x30 (input2.txt):**
+
+![Minimal example](./images/1668882645.png)
+
+
+
+**Random matrix 20x20 (input3.txt):**
 
 ![Minimal example](./images/1668883356.png)
 
 
-**Random matrix 25x25:**
+**Random matrix 25x25 (input4.txt):**
 
 ![Minimal example](./images/1668884276.png)
 
