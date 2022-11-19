@@ -18,7 +18,7 @@ make
 
 The first line should contain one integer $n$, where $n$ should less than 1000.
 
-In $n$ next lines, each line should contain $n$ integers, where each integer can be 1 or 0, thus forming a *symmetric* matrix of size $nxn$.
+In $n$ next lines, each line should contain $n$ integers, where each integer can be 1 or 0, thus forming a *symmetric* matrix of size $n*n$.
 
 ```
 5
