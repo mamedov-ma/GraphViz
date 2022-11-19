@@ -44,5 +44,8 @@ In $n$ next lines, each line should contain $n$ integers, where each integer can
 ![Minimal example](./images/1668883356.png)
 
 
+**Random matrix 25x25:**
+
+![Minimal example](./images/1668884276.png)
 
 
