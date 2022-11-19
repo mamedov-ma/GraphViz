@@ -1,1 +1,0 @@
-/usr/bin/c++     CMakeFiles/main.dir/src/placement.cc.o CMakeFiles/main.dir/src/geometry.cc.o CMakeFiles/main.dir/src/main.cc.o  -o main 
