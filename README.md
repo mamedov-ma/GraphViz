@@ -28,5 +28,10 @@ In $n$ next lines, each line should contain $n$ integers, where each integer can
 0 0 0 0 0
 1 0 0 1 1
 ```
+## Some examples 
+
+**Identity matrix of size 30x30:**
+
+![Minimal example](./images/1668882645.png)
 
 
