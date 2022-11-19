@@ -38,6 +38,8 @@ class FruchtermanReingold
         void scalePos(std::vector<Point> &Positions) const;
 };
 
+std::vector<std::vector<int>> Visualization(int N, int M, std::vector<std::vector<int>> Edges); 
+
 } // namespace graph_viz
 
 #endif

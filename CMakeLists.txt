@@ -1,24 +1,38 @@
 cmake_minimum_required(VERSION 3.11)
-project(MyStack VERSION 1.0)
+project(MyGraphViz VERSION 1.0)
 
 set(CMAKE_CXX_STANDARD 17)
 set(CMAKE_CXX_STANDARD_REQUIRED ON) 
 
-set(STACK_INCLUDES ${CMAKE_CURRENT_SOURCE_DIR}/include)
+set( GraphViz main )
+add_executable( ${GraphViz} )
 
-set(STACK_BOOL_SRC mystack_bool_impl.cc)
-set(STACK_BOOL_SRC_DIR ${CMAKE_CURRENT_SOURCE_DIR}/src)
+target_include_directories( ${GraphViz} PRIVATE
+    "${CMAKE_SOURCE_DIR}/include"
+)
 
-add_library(mystack INTERFACE)
+set( GraphViz_SRC_DIR 
+    "${CMAKE_SOURCE_DIR}/src" 
+)
 
-target_include_directories(mystack INTERFACE ${STACK_INCLUDES})
-target_sources(mystack INTERFACE ${STACK_BOOL_SRC_DIR}/${STACK_BOOL_SRC})
+set( GraphViz_SRC_FILES
+    "placement.cc"
+    "geometry.cc"
+    "main.cc"
+)
+
+foreach( FILE IN LISTS GraphViz_SRC_FILES )
+    target_sources( ${GraphViz} PRIVATE "${GraphViz_SRC_DIR}/${FILE}" )
+endforeach()
+
+set( COMMON_FLAGS -I /usr/include/python3.8 -lpython3.8)
+target_compile_options( ${GraphViz} PRIVATE ${COMMON_FLAGS} )
 
 find_program(CLANG_TIDY "clang-tidy")
 if (CLANG_TIDY)
 
     add_custom_target(clang_tidy
-    COMMAND clang-tidy ${STACK_BOOL_SRC_DIR}/${STACK_BOOL_SRC} ${STACK_INCLUDES}/mystack.hh --format-style=file -- -I${STACK_INCLUDES}
+    COMMAND clang-tidy ${GraphViz_BOOL_SRC_DIR}/${GraphViz_BOOL_SRC} ${GraphViz_INCLUDES}/myGraphViz.hh --format-style=file -- -I${GraphViz_INCLUDES}
     )
 
     message(STATUS "clang-tidy target ON")
@@ -41,4 +55,4 @@ if (CLANG_FORMAT)
         message(STATUS "clang-format target ON")
 endif()
 
-add_subdirectory(tests)
+
